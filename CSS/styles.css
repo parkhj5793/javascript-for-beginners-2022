@@ -2,31 +2,41 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image:url("images/body_background.jpg");
-    background-size:auto;
-    background-repeat: no-repeat;
-    background-position-x: center;
+    padding-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 150px;
-    margin: 0 20px;
+}
+
+.bgimg {
+    position: absolute;
+    top:0;
+    z-index: -1;
+    height:100%;
+    min-width: 100%;
 
 }
+
 .weather {
     color: white;
     font-size: 20px;
     font-weight: 500;
 }
 
-.far.fa-compass {
+.far.fa-compass, .fa-solid.fa-circle-check {
     font-size: 15px;
+    margin-right: 5px;
 }
 
 .time {
     color: white;
     font-size: 150px;
     font-weight: 500;
+    padding: 10px;
+}
+
+.weather_temp, .weather_weather {
+    margin-left: 5px;
 }
 
 .todo {
@@ -35,9 +45,9 @@ body {
     justify-content: center;
 }
 
-.todo_greeting {
+.greeting {
     color: white;
-    font-size: 38px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 500;
@@ -52,7 +62,7 @@ body {
 .todo_text {
     color: white;
     font-size: 28px;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -67,30 +77,60 @@ body {
     width: 400px;
 }
 
+.todo_lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.todo_lists > div {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.fa-solid.fa-check {
+    margin-right: 5px;
+}
+
+button {
+    background-color: unset;
+    color: white;
+    border: 1px solid white;
+    margin: 0 5px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
 .login-form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 130px;
+    margin-top: 100px;
 }
 
 .login-form_text {
     color:white;
-    font-size: 38px;
+    font-size: 46px;
     font-weight: 500;
     text-align: center;
+    padding: 10px;
 }
 
 .login-form_name {
     background-color: unset;
     height: 50px;
     border: none;
-    border-bottom: 3px solid white;
+    border-bottom: 5px solid white;
     color: white;
     text-align: center;
-    font-size: 24px;
+    font-size: 30px;
     width: 400px;
+    margin-bottom: 10px;
 }
 
 
@@ -102,7 +142,7 @@ body {
     color:white;
     margin-top: 10px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .fas.fa-chevron-right {
@@ -111,22 +151,20 @@ body {
 
 .login-form_guide {
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     margin-top: 10px;
 }
 
 .quotes {
     color: rgba(255,255,255,0.8);
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     text-align: center;
     position: fixed;
     bottom: 10px;
-}
-
-.hidden {
-    visibility: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .displaynone {

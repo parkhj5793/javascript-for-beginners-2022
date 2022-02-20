@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="reset.css">
-    <link rel="stylesheet" href="styles.css">
+    <link href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS\styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,32 +10,42 @@
 </head>
 <body>
     <div class="weather displaynone">
-        <span class="weather_location"><i class="far fa-compass"></i> Seoul</span>
-        <span class="weather_temp">16º</span>
-        <span class="weather_weather">Sunny</span>
+        <i class="far fa-compass"></i><span class="weather_location"></span>
+        <span class="weather_temp"></span>
+        <span class="weather_weather"></span>
     </div>
     <div class="time displaynone">
-        <san>12:59</san>
+        <san></san>
     </div>
     <div class="todo displaynone">
-        <span class="todo_greeting">Good Night, Monica</span>
-        <div class="todo_todo">
-            <span class="todo_text">
-                Would you add Todo list? 
-            </span>
-            <input class="todo_input" type="text">
+        <div class="greeting">
+            <span></span>
+            <span></span>
         </div>
+        <form class="todo_todo">
+            <span class="todo_text">
+                What is your main focus for today? 
+            </span>
+            <input class="todo_input" type="text" required>
+        </form>
+        <div class="todo_lists"></div>
     </div>
     <div class="quotes displaynone">
-        <span class="quote_text">"Self-confidence is the first requisite to great undertakings."<br>Samuel Johnson</span>
+        <span></span>
+        <span></span>
     </div>
     <form class="login-form">
-        <span class="login-form_text">Hello, What is your name?</span>
+        <span class="login-form_text">Hello!<br>What is your name?</span>
         <input class="login-form_name" type="text">
         <input class="login-form_bnt displaynone" type="button" value="Continue"> 
         <span class="login-form_guide displaynone">Please let us Know your name.</span>
-    </div>
-    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous" ></script>
-    <script src="script.js"></script>
+    </form>    
+    <script src="https://kit.fontawesome.com/7974583935.js" crossorigin="anonymous"></script>
+    <script src="JS/login.js"></script>
+    <script src="JS/time.js"></script>
+    <script src="JS/quotes.js"></script>
+    <script src="JS/background.js"></script>
+    <script src="JS/todo.js"></script>
+    <script src="JS/weather.js"></script>
 </body>
 </html>
